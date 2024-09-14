@@ -8,7 +8,8 @@ const app = express();
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 // Koneksi ke MongoDB
-const dbURI = "mongodb+srv://admin:Admin1234@cluster0.cfzga.mongodb.net/nodejs-app?retryWrites=true&w=majority&appName=Cluster0";
+const dbURI = "Your Link";
+// const dbURI = "mongodb+srv://admin:Admin1234@cluster0.cfzga.mongodb.net/nodejs-app?retryWrites=true&w=majority&appName=Cluster0";
 mongoose
   .connect(dbURI)
   .then((result) => {
