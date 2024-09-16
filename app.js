@@ -7,7 +7,6 @@ const Blog = require("./models/blog");
 const app = express();
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
-// Koneksi ke MongoDB
 const dbURI = "Your Link";
 // const dbURI = "mongodb+srv://admin:Admin1234@cluster0.cfzga.mongodb.net/nodejs-app?retryWrites=true&w=majority&appName=Cluster0";
 mongoose
@@ -21,7 +20,6 @@ mongoose
   })
   .catch((err) => console.log(err));
 
-// Set view engine
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
@@ -33,7 +31,7 @@ app.get("/news", (req, res) => {
   Blog.find()
     .sort({ createdAt: -1 })
     .then((result) => {
-      res.render("news", { blogs: result, title: "All Blogs" });
+      res.render("news", { blogs: result, title: "News" });
     })
     .catch((err) => {
       console.log(err);

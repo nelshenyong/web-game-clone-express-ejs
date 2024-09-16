@@ -1,51 +1,64 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
+@import url("https://unpkg.com/aos@2.3.1/dist/aos.css"); */
 
 body {
-  max-width: 1200px;
-  padding: 0 20px;
-  font-family: "Noto Serif", serif;
-  max-width: 1200px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Work Sans';
+  background-color: #121210;
 }
 
 /* nav & footer styles */
 nav.navbar {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 65vh;
   margin-bottom: 60px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ddd;
-  text-transform: uppercase;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  background-color: #2b2b2b;
 }
+
+nav.navbar div.site-title {
+  display: flex;
+  flex-direction: row;
+}
+
+nav.navbar div.site-title a {
+  text-decoration: none;
+}
+
+nav.navbar div.site-title a h1 {
+  font-size: 1.3vw;
+  font-weight: bold;
+  color: white;
+}
+
 nav.navbar ul {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
   align-items: center;
 }
 nav.navbar li {
   list-style-type: none;
-  margin-left: 20px;
+  margin-left: 5px;
 }
-nav.navbar h1 {
-  font-size: 3em;
+
+nav.navbar li a {
+  color: white;
 }
-nav.navbar p,
-nav.navbar a {
-  color: #777;
-  font-weight: 300;
+
+nav.navbar div.socials {
+  display: flex;
+  gap: 2vh;
 }
+
 footer {
   color: #777;
   text-align: center;
   margin: 80px auto 20px;
-}
-h2 {
-  margin-bottom: 40px;
-}
-h3 {
-  text-transform: capitalize;
-  margin-bottom: 8px;
-}
-.content {
-  margin-left: 20px;
 }
 
 /* index styles */
