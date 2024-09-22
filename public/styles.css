@@ -4,7 +4,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   background-color: #121210;
 }
 
@@ -14,7 +14,6 @@ nav.navbar {
   justify-content: center;
   align-items: center;
   gap: 65vh;
-  margin-bottom: 60px;
   padding-top: 2.5vh;
   padding-bottom: 2.5vh;
   background-color: #2b2b2b;
@@ -30,7 +29,7 @@ nav.navbar div.site-title a {
 }
 
 nav.navbar div.site-title a h1 {
-  font-size: 1.3vw;
+  font-size: 1.3rem;
   font-weight: bold;
   color: white;
 }
@@ -48,6 +47,11 @@ nav.navbar li {
 
 nav.navbar li a {
   color: white;
+  font-weight: 600;
+}
+
+nav.navbar li a:hover {
+  text-decoration: underline;
 }
 
 nav.navbar div.socials {
@@ -55,64 +59,399 @@ nav.navbar div.socials {
   gap: 2vh;
 }
 
-footer {
-  color: #777;
-  text-align: center;
-  margin: 80px auto 20px;
+div.content {
+  margin-left: 30vh;
+  margin-right: 30vh;
 }
 
-/* index styles */
-.blogs a {
-  display: block;
-  margin: 40px 0;
-  padding-left: 30px;
-  border-left: 6px solid crimson;
-}
-.blogs a:hover h3 {
-  color: crimson;
-}
-
-/* details styles */
-.details {
-  position: relative;
-}
-.delete {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-radius: 50%;
-  padding: 8px;
-}
-.delete:hover {
-  cursor: pointer;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
-}
-
-/* create styles */
-.create-blog form {
-  max-width: 400px;
-  margin: 0 auto;
-}
-.create-blog input,
-.create-blog textarea {
-  display: block;
-  width: 100%;
-  margin: 10px 0;
-  padding: 8px;
-}
-.create-blog label {
-  display: block;
-  margin-top: 24px;
-}
-textarea {
-  height: 120px;
-}
-.create-blog button {
-  margin-top: 20px;
-  background: crimson;
+div.content h2 {
   color: white;
-  padding: 6px;
-  border: 0;
-  font-size: 1.2em;
+}
+
+div.content div.banner {
+  background-color: white;
+  width: 732.11px;
+  height: 405.49px;
+  margin: 0 auto;
+  background-image: url("/assets/Banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div.content hr {
+  border-color: #101010;
+}
+
+div.part-index {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3vh;
+}
+
+div.part-index div.left {
+  margin-right: 10vh;
+}
+
+div.part-two div.left {
+  margin-right: 0;
+}
+
+div.part-index div.left h1,
+p {
+  color: white;
+  font-style: italic;
+}
+
+div.part-index div.left p {
+  font-size: 1.2rem;
+}
+
+div.part-index div.right div.image {
+  width: 300px;
+  height: 169px;
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div.part-one div.right div.image {
+  background-image: url(assets/thumbnail.jpeg);
+}
+
+div.part-two div.right div.image {
+  background-image: url(assets/thumbnail2.jpeg);
+  margin-right: 10vh;
+  width: 300px;
+  height: 169px;
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div.part-three div.right div.image {
+  background-image: url(assets/thumbnail3.jpeg);
+}
+
+div.screenshots {
+  margin-bottom: 5vh;
+}
+
+div.screenshots h1 {
+  color: white;
+}
+
+div.screenshots div.ss-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2vh;
+  justify-content: center;
+}
+
+div.screenshots div.ss-img div.img {
+  width: 100%;
+  height: 0;
+  padding-bottom: 60%;
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div.screenshots div.ss-img div.one {
+  background-image: url(assets/S01C.jpg);
+}
+div.screenshots div.ss-img div.two {
+  background-image: url(assets/S02C.jpg);
+}
+div.screenshots div.ss-img div.three {
+  background-image: url(assets/S03C.jpg);
+}
+div.screenshots div.ss-img div.four {
+  background-image: url(assets/S04C.jpg);
+}
+div.screenshots div.ss-img div.five {
+  background-image: url(assets/S05C.jpg);
+}
+div.screenshots div.ss-img div.six {
+  background-image: url(assets/S07C.jpg);
+}
+
+div.games {
+  background-color: #343a40;
+  padding-left: 6vh;
+  padding-right: 6vh;
+  padding-top: 10vh;
+  padding-bottom: 18vh;
+}
+
+div.games div.image {
+  width: 616px;
+  height: 353px;
+  background-image: url(assets/capsule_616x353.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+div.games a {
+  color: #e03c34;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+div.about {
+  background-color: #2b2b2b;
+  padding-left: 6vh;
+  padding-right: 6vh;
+  padding-top: 12vh;
+  padding-bottom: 26vh;
+}
+
+div.about > div.container {
+  display: flex;
+}
+
+div.about > div.container > div.left {
+  margin-right: 25vh;
+}
+
+div.about div.container > div.right div.contact {
+  display: flex;
+  margin-right: 30vh;
+}
+
+div.about div.container div.left span.title {
+  font-size: 6vh;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+}
+
+div.about div.container div.right span.title {
+  font-size: 6vh;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+}
+
+div.about div.container div.left p {
+  margin-top: 4vh;
+  font-size: 18px;
+}
+
+div.about div.container div.right div.contact {
+  margin-top: 4vh;
+}
+
+div.about div.container div.right div.contact div.left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4vh;
+  color: white;
+}
+
+div.about div.container div.right div.contact div.left span {
+  font-size: 17px;
+}
+
+div.about div.container div.right div.contact div.right {
+  display: flex;
+  flex-direction: column;
+}
+
+div.about div.container div.right div.contact div.right span {
+  font-size: 17px;
+  color: white;
+  font-style: italic;
+}
+
+div.about div.container div.right div.contact div.right a {
+  font-size: 17px;
+  color: #e13c33;
+  font-style: italic;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 46vh;
+}
+
+.single {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #333;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: white;
+}
+
+.single:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.snippet {
+  font-size: 1rem;
+  color: white;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25vh;
+}
+
+.details h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.details .content {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.details .content p {
+  color: white;
+}
+
+.details .delete {
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  max-width: 100px;
   cursor: pointer;
+}
+
+.details .delete:hover {
+  background-color: #e60000;
+}
+
+.content-guidelines {
+  margin-top: 5vh;
+  margin-bottom: 50px;
+}
+
+.content-guidelines span {
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.content-guidelines p {
+  color: black;
+}
+
+footer div.container {
+  padding-left: 7vh;
+  padding-right: 10vh;
+  background-color: black;
+  padding-bottom: 25vh;
+}
+
+footer div.left {
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+
+footer div.left a {
+  color: #e13c33;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+footer div.left h3 {
+  color: white;
+}
+
+footer div.right {
+  float: right;
+  background-color: black;
+}
+
+footer div.right h1 {
+  color: white;
+}
+
+.create-blog {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #333;
+}
+
+.create-blog form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.create-blog label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.create-blog input[type="text"],
+.create-blog textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.create-blog textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.create-blog button {
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.create-blog button:hover {
+  background-color: #e60000;
 }
