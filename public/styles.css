@@ -451,3 +451,14 @@ footer div.right h1 {
 .create-blog button:hover {
   background-color: #e60000;
 }
+
+.not-found {
+  margin-top: 30vh;
+  margin-bottom: 30vh;
+  padding: 0;
+}
+
+.not-found h1 {
+  color: white;
+  text-align: center;
+}

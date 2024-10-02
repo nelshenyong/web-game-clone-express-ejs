@@ -7,7 +7,9 @@ const Blog = require("./models/blog");
 const app = express();
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
-const dbURI = "mongodb+srv://admin:Admin1234@cluster0.cfzga.mongodb.net/nodejs-app?retryWrites=true&w=majority&appName=Cluster0";
+// const dbURI = "mongodb+srv://admin:Admin1234@cluster0.cfzga.mongodb.net/nodejs-app?retryWrites=true&w=majority&appName=Cluster0";
+
+const dbURI = "mongodb://localhost:27017/";
 mongoose
   .connect(dbURI)
   .then((result) => {
@@ -51,7 +53,7 @@ app.get("/content-guidelines", (req, res) => {
 
 
 app.get("/blogs/create", (req, res) => {
-  res.render("create", { title: "Create a new blog" });
+  res.render("create", { title: "Create a news" });
 });
 
 app.post("/blogs", urlencodedParser, (req, res) => {
@@ -75,7 +77,7 @@ app.get("/blogs/:id", (req, res) => {
   const id = req.params.id;
   Blog.findById(id)
     .then((result) => {
-      res.render("details", { blog: result, title: "Blog Details" });
+      res.render("details", { blog: result, title: "News Detail" });
     })
     .catch((err) => {
       console.log(err);
@@ -110,16 +112,6 @@ app.delete("/blogs/:id", (req, res) => {
 //     });
 // });
 
-app.get("/single-blog", (req, res) => {
-  Blog.findById('66dbd9186041579c6dfb373a')
-    .then((result) => {
-      res.send(result);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-});
-
 app.use((req, res) => {
-  res.status(404).render("404", { title: "404" });
+  res.status(404).render("404", { title: "404" });  
 });
